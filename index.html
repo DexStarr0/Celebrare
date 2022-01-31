@@ -1,0 +1,155 @@
+<!-- Creted By Ayush Raj -->
+<!-- e-mail:official4ayush@gmail.com -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Celebrare</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!-- <link rel="icon" href="favicon.png" type="image/png" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/afc5b55927.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="top-nav">
+      <img class="mobile_logo" src="ASSETS/Logo.png" alt="" />
+      <i class="fa fa-bars" onclick="Menu()" aria-hidden="true"></i>
+    </section>
+    <!-- navbar  -->
+    <nav>
+      <!-- <img class="mobile_logo" src="ASSETS/Logo.png" alt="" />
+      <i class="fa fa-bars" onclick="Menu()" aria-hidden="true"></i> -->
+      <div class="navbar">
+        <div class="logo">
+          <img src="ASSETS/Logo.png" alt="" />
+        </div>
+        <div class="nav_link">
+          <ul>
+            <li>
+              <a href="#">Wedding Cards</a>
+            </li>
+            <li>
+              <a href="#">Birthday Cards</a>
+            </li>
+            <li>
+              <a href="#">Felling Cards</a>
+            </li>
+            <li>
+              <a href="#">Anniversary Cards</a>
+            </li>
+          </ul>
+        </div>
+        <div class="signup"><a href="#">Login | Signup</a></div>
+      </div>
+    </nav>
+
+    <!-- sec-1  -->
+    <section class="sec-1">
+      <div class="bg">
+        <h1 class="sub-heading">Digital Card Detail</h1>
+      </div>
+      <!-- complex -->
+      <div class="ca-detail">
+        <i class="fas fa-times" onclick="smallsize()"></i>
+        <!-- card  -->
+        <div class="cards" onclick="fullsize()">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="page-1"><img src="ASSETS/Page1.jpg" alt="" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="page-2"><img src="ASSETS/Page2.jpg" alt="" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="page-3"><img src="ASSETS/Page3.jpg" alt="" /></div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <!-- card-info  -->
+        <div class="card-detail">
+          <h2 class="c-1">Card Title</h2>
+          <div class="price_dis c-2">
+            <div>$499 <span>$2000</span></div>
+            <div class="discount">75%Off</div>
+          </div>
+          <div class="title_detail c-3">
+            <p>
+              Donec eu ornare mi. Sed finibus condimentum mauris, ut dictum eros
+              maximus vitae. Nullam condimentum tortor ac elit feugiat iaculis.
+              Aenean mauris nisl, blandit
+            </p>
+          </div>
+          <button class="btn c-4">Try this Card</button>
+        </div>
+      </div>
+    </section>
+    <!-- sec-2 -->
+    <section class="sec-2">
+      <h1 class="sub-heading">Features</h1>
+      <div class="fea-detail">
+        <div class="col-1 view">
+          <div class="circle"></div>
+          <p>
+            Create your card <br />
+            in just 5 mins
+          </p>
+        </div>
+        <div class="col-2 view">
+          <div class="circle"></div>
+          <p>
+            Customize the Text with <br />
+            "Edit this Page" Option
+          </p>
+        </div>
+        <div class="col-3 view">
+          <div class="circle"></div>
+          <p>
+            Editing is available <br />
+            after purchase also
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        // pagination: ".swiper-pagination",
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 3,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>
